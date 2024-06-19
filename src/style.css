@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Pangolin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pangolin", cursive;
+}
+body {
+  background: url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  /* border: 1px solid black; */
+  margin: 1rem;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 2rem;
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: white;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 47px 2px #edd453;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem;
+  box-sizing: border-box;
+}
+.card img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+}
+
+/* Modal */
+.scoreCard {
+  /* border: 2px solid black; */
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40vw;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 12px;
+  text-align: center;
+}
