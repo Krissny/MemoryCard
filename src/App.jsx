@@ -65,7 +65,7 @@ function App() {
         <h2>Score : {score}</h2>
         <h3>Highest Score : {score > highestScore ? score : highestScore}</h3>
         <p>
-          <i>Rule : Don't Click one card more than once</i>
+          <i>Rule : Don't Click one card twice</i>
         </p>
       </div>
       <div className="cards">
