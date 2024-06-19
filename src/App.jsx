@@ -34,12 +34,10 @@ function App() {
     }
     getData();
   }, [highestScore]);
-  // console.log(charList);
   function handleChange(id) {
     let obj = charList.find((item) => item.id == id);
     console.log(obj);
     if (obj.hasOwnProperty("clicked")) {
-      console.log("Game is Over Game will be reset automatically");
       alert(
         "You clicked one card more than once\nGame will be reset automatically"
       );
