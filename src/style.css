@@ -9,23 +9,27 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 .card {
   display: flex;
   flex-direction: column;
   max-width: 280px;
-  /* border: 1px solid black; */
+  border: 1px solid white;
   margin: 1rem;
   padding: 2rem;
   gap: 1rem;
   align-items: center;
   border-radius: 2rem;
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(-20deg, #014f82 0%, #000000 100%);
   color: white;
+  opacity: 0.9;
 }
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 47px 2px #edd453;
+  opacity: 1;
+  box-shadow: 5px 6px 10px 6px #000000;
 }
 
 .cards {
@@ -40,23 +44,64 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 2rem;
+  border: 2px solid white;
 }
 
 /* Modal */
 .scoreCard {
-  /* border: 2px solid black; */
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  color: white;
-  margin-right: auto;
-  margin-left: auto;
-  width: 40vw;
-  padding: 1rem;
-  border-radius: 2rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  margin: 2rem;
+  gap: 1rem;
+}
+.header {
+  align-self: center;
+  display: flex;
+  gap: 10px;
+  background: linear-gradient(-20deg, #014f82 0%, #000000 100%);
+  padding: 10px;
+  border-radius: 1rem;
+}
+.header img {
+  width: 39px;
+}
+
+.score {
+  display: flex;
+}
+.curr {
+  position: sticky;
+  top: 0;
+}
+.high {
+  position: sticky;
+  top: 0;
+  left: 100%;
+}
+.rule {
+  align-self: center;
+}
+
+.gameOver {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  gap: 12px;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  gap: 10px;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 22px;
 }
