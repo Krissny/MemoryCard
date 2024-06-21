@@ -30,6 +30,7 @@ body {
   transform: scale(1.05);
   opacity: 1;
   box-shadow: 5px 6px 10px 6px #000000;
+  cursor: pointer;
 }
 
 .cards {
